@@ -30,6 +30,18 @@
 
 ---
 
+### ⚡ Paradigm Core Ethereum Infrastructure Contributions (Reth • Alloy • Foundry)
+
+Production pull requests fixing critical synchronization, edge-case network recovery, and path injection vulnerabilities across Paradigm's core Rust ecosystem:
+
+| Project & Repo | Pull Request | Impact & Technical Achievement | Status |
+| :--- | :--- | :--- | :---: |
+| **Paradigm Reth**<br/>`paradigmxyz/reth`<br/>*(7,000+ ★)* | [**PR #27049**](https://github.com/paradigmxyz/reth/pull/27049) | **Snapshot manifest validation & zero-chunk division guard**: Enforced `SnapshotManifest::validate()` to reject malformed manifests with `blocks_per_file == 0` prior to expansion. Hardened `ChunkedArchive::num_chunks()` and `chunk_relative_path()` with saturating arithmetic to prevent zero-division panics during snapshot downloads. | ![PR Open](https://img.shields.io/badge/PR-Open_•_Review_Requested-blue?style=flat-square) |
+| **Alloy Core SDK**<br/>`alloy-rs/alloy`<br/>*(1,400+ ★)* | [**PR #4191**](https://github.com/alloy-rs/alloy/pull/4191) | **Watch stream heartbeat recovery**: Fixed silent stream freeze in `PendingTransactionBuilder::watch` (#4181, #3881) when HTTP pollers skip the exact mined block due to network jitter. Automatically scans skipped block ranges across poll heartbeats to ensure pending transactions are never hung indefinitely. | ![PR Open](https://img.shields.io/badge/PR-Open_•_Review_Requested-blue?style=flat-square) |
+| **Foundry**<br/>`foundry-rs/foundry`<br/>*(16,000+ ★)* | [**PR #16707**](https://github.com/foundry-rs/foundry/pull/16707) | **Chisel NTFS alternate data stream isolation**: Hardened `validate_session_id` in `crates/chisel` to reject `:` alongside directory traversal characters (`/`, `\`), preventing session writes from escaping cache enumeration into Windows NTFS Alternate Data Streams (`chisel-foo:bar.json`). | ![PR Open](https://img.shields.io/badge/PR-Open_•_Review_Requested-blue?style=flat-square) |
+
+---
+
 ### 🌟 Tier-1 Systems Open-Source Contributions
 
 Direct contributions to mission-critical infrastructure projects powering production services globally:
