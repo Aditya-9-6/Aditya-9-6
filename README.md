@@ -5,8 +5,9 @@
 
 [![Live Portfolio](https://img.shields.io/badge/🌐_Portfolio-Live_Site-10b981?style=for-the-badge)](https://aditya-9-6.github.io/Aditya_dahale-portfolio/)
 [![Resume PDF](https://img.shields.io/badge/📄_Resume-Download_1--Page_PDF-blue?style=for-the-badge)](https://aditya-9-6.github.io/Aditya_dahale-portfolio/Aditya_Dahale_Resume.pdf)
+[![Merged PRs](https://img.shields.io/badge/Open_Source-11x_Merged_PRs-8957e5?style=for-the-badge&logo=git-merge)](https://github.com/aditya-9-6)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/aditya-dahale-207208aditya)
-[![GitHub Stars](https://img.shields.io/badge/Open_Source_Impact-200,000+_Stars-f59e0b?style=for-the-badge&logo=github)](https://github.com/aditya-9-6)
+[![GitHub Stars](https://img.shields.io/badge/Impact-200,000+_Stars-f59e0b?style=for-the-badge&logo=github)](https://github.com/aditya-9-6)
 
 <br/>
 
@@ -42,7 +43,7 @@ Production pull requests fixing critical synchronization, edge-case network reco
 
 ---
 
-### 🌟 Tier-1 Systems Open-Source Contributions
+### 🌟 Tier-1 Systems Open-Source Contributions (11x Merged)
 
 Direct contributions to mission-critical infrastructure projects powering production services globally:
 
@@ -59,6 +60,7 @@ Direct contributions to mission-critical infrastructure projects powering produc
 | **Fly.io LTX**<br/>`superfly/ltx`<br/>*(SQLite transaction file format)* | [**PR #102**](https://github.com/superfly/ltx/pull/102)<br/>[**PR #104**](https://github.com/superfly/ltx/pull/104) | **Stream decoder integrity & zero-page checksum fix**: In PR #102, enforced strict payload validation for empty block headers preventing stream corruptions. In PR #104, resolved edge-case panic and trailer generation on zero-page files with `NoChecksum: true`. | ![CI](https://img.shields.io/badge/CI-100%25_Green-brightgreen?style=flat-square) |
 | **Astral uv**<br/>`astral-sh/uv`<br/>*(45,000+ ★)* | [**PR #21457**](https://github.com/astral-sh/uv/pull/21457) | **Cross-process file lock timeout propagation**: Decoupled lock acquisition from static timeouts by threading configurable timeout options through `EnvironmentOptions` across Astral's entire workspace toolchain. Passed all 55 CI matrix suites across 11 OS/arch targets. | ![CI](https://img.shields.io/badge/CI-100%25_Green_(58/58)-brightgreen?style=flat-square) |
 | **Turso libSQL**<br/>`tursodatabase/libsql`<br/>*(14,000+ ★)* | [**PR #2280**](https://github.com/tursodatabase/libsql/pull/2280) | **Default WAL journal mode for local databases**: Enforced Write-Ahead Logging (WAL) concurrency as default for local SQLite instances, preventing database locks under concurrent access. All 12 CI suites passed. | ![CI](https://img.shields.io/badge/CI-100%25_Green-brightgreen?style=flat-square) |
+| **RuView Firmware**<br/>`RuView`<br/>*(Embedded Systems)* | [**PR #1**](https://github.com/Aditya-9-6/RuView/pull/1) | **Hardware base MAC entropy for device fingerprints & host C unit tests**: Used ESP32 hardware base MAC as entropy for PSA SHA-256 device onboarding fingerprints (`serial_onboarding.c`), with zero-dependency host C unit testing harness. | ![Merged](https://img.shields.io/badge/Status-Merged-8957e5?style=flat-square) |
 | **SmartCore**<br/>`smartcorelib/smartcore` | [**PR #386**](https://github.com/smartcorelib/smartcore/pull/386) | **Capacity pre-allocation in ensemble trees**: Optimized ensemble tree training cycles by pre-allocating exact vector capacities in Random Forest models, eliminating repeated heap memory reallocations. | ![Merged](https://img.shields.io/badge/Status-Merged-8957e5?style=flat-square) |
 | **MaxMindDB**<br/>`oschwald/maxminddb-rust` | [**PR #120**](https://github.com/oschwald/maxminddb-rust/pull/120) | **Zero-allocation IP metadata lookup**: Accelerated GeoIP binary lookups using native big-endian byte decoding (`u32::from_be_bytes`), enabling single-CPU-instruction decoding of 32-bit database nodes. | ![Merged](https://img.shields.io/badge/Status-Merged-8957e5?style=flat-square) |
 
